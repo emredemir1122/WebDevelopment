@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  border-left: 3px solid red;
+  padding-left: 10px;
+  background-color: #ffffff80;
+  font-family: 'Grandstander', cursive;
+}
+.sabit{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.linkler a {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 10px;
+  border: 3px solid;
+}
+
+.linkler a:hover {
+  background-color: purple;
+  color: #1fab89;
+}
+
+.logo {
+  color: purple;
+  padding: 5px;
+  border: 2px dashed;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: 'Marck Script', cursive;
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
+.linkler {
+  float: right;
+  display: flex;
+  height: 75px;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid {
+  text-align: left;
+  background-color: #71c9ce;
+  color: white;
+  font-size: 2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: sticky;
+  top: 0;
+
+}
+
+.container {
+  background-color: #cbf1f5;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sol-sag-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.orange {
+  background-color: #f9f7d9;
+}
+
+.profil-resmi {
+  border-radius: 40px 0 40px 0;
+  border: 2px dashed;
+  width: 150px;
+  height: 150px;
+}
+
+.hakkimda {
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: #cffffe;
+}
+
+.hakkimda-yazi {
+  padding-left: 2rem;
+}
+
+.hobilerim {
+  border: 3px dashed red;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: #f9f7d9;
+  margin: 2% 0;
+}
+
+.hobilerim-yazi {
+  padding-right: 2rem;
+}
+
+.hobi-resmi {
+  border-radius: 40px 0 0 40px;
+  border: 2px dashed;
+  width: 150px;
+  height: 150px;
+}
+
+.bildigim-diller {
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: #fce2ce;
+}
+
+.bildigim-diller-yazi {
+  padding-left: 2rem;
+}
+
+.bildigim-diller-resmi {
+  border-radius: 40px 0 40px 0;
+  width: 150px;
+  height: 150px;
+}
+
+.container-alt {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-arkaplan {
+  background-color: #232F3E;
+}
+
+.menu {
+  width: 25%;
+  padding: 15px;
+}
+
+.baslık {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu ul li {
+  list-style-type: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.menu ul li a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.ustegeridon {
+  background-color: #485769;
+  padding: 10px;
+  color: #dddddd;
+  text-align: center;
+}
+.alt-link{
+  text-decoration: none;
+  color: #dddddd;
+}
+.alt-link:hover{
+  text-decoration: underline;
+}
+.alt-link:hover .ustegeridon{
+  background-color: #384759;
+}

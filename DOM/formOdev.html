@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <title>Signin Template for Bootstrap</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style media="screen">
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-align: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+    .form-signin {
+      width: 100%;
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+    .form-signin .checkbox {
+      font-weight: 400;
+    }
+    .form-signin .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-signin .form-control:focus {
+      z-index: 2;
+    }
+    .form-signin input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  </style>
+</head>
+<body class="text-center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var bodyElementi=document.querySelector("body");
+var formElementi=document.createElement("form");
+var labelElementi=document.createElement("label");
+var inputElementi=document.createElement("input");
+var labelElementi1=document.createElement("label");
+var inputElementi1=document.createElement("input");
+var divElementi=document.createElement("div");
+var labelElementi2=document.createElement("label");
+var inputElementi2=document.createElement("input");
+var yazi=document.createTextNode("Remember Me");
+var buttonElementi=document.createElement("button");
+var pElementi=document.createElement("p");
+
+formElementi.classList.add("form-signin");
+formElementi.setAttribute("onsubmit","return false");
+
+var h1Elementi=document.createElement("h1");
+h1Elementi.classList.add("h3","mb-3","font-weight-normal");
+h1Elementi.innerText="Please sign in";
+formElementi.appendChild(h1Elementi);
+bodyElementi.appendChild(formElementi);
+labelElementi.setAttribute("for","inputEmail");
+labelElementi.classList.add("sr-only");
+labelElementi.innerText="Email address";
+formElementi.appendChild(labelElementi);
+inputElementi.setAttribute("type","email");
+inputElementi.setAttribute("id","inputEmail");
+inputElementi.setAttribute("class","form-control");
+inputElementi.setAttribute("placeholder","Email adress");
+inputElementi.setAttribute("required","");
+inputElementi.setAttribute("autofocus","");
+formElementi.appendChild(inputElementi);
+labelElementi1.setAttribute("for","inputPassword");
+labelElementi1.classList.add("sr-only");
+labelElementi1.innerText="Password";
+formElementi.appendChild(labelElementi1);
+inputElementi1.setAttribute("type","password");
+inputElementi1.setAttribute("id","inputPassword");
+inputElementi1.setAttribute("class","form-control");
+inputElementi1.setAttribute("placeholder","Password");
+inputElementi1.setAttribute("required","");
+inputElementi1.setAttribute("autofocus","");
+formElementi.appendChild(inputElementi1);
+divElementi.classList.add("checkbox","mb-3");
+inputElementi2.setAttribute("type","checkbox");
+inputElementi2.setAttribute("value","remember-me");
+inputElementi2.innerText="Remember Me";
+labelElementi2.appendChild(inputElementi2);
+labelElementi2.appendChild(yazi);
+divElementi.appendChild(labelElementi2);
+formElementi.appendChild(divElementi);
+buttonElementi.classList.add("btn","btn-lg","btn-primary","btn-block");
+buttonElementi.setAttribute("type","submit");
+buttonElementi.innerText="Sign in";
+formElementi.appendChild(buttonElementi);
+pElementi.classList.add("mt-5","mb-3","text-muted");
+pElementi.setAttribute("id","yazim");
+pElementi.innerHTML="&copy; 2017-2018";
+formElementi.appendChild(pElementi);
+</script>
+
+  </body>
+  </html>

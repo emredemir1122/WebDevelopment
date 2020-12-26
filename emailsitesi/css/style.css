@@ -1,0 +1,82 @@
+.navbar {
+  padding: 0 1rem;
+}
+
+.arkaplan-mavi {
+  background-color: #073B4C;
+}
+
+.nav-radius {
+  border-radius: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+}
+
+.ust-alt-45px-bosluk {
+  padding: 45px 0;
+}
+
+.slogan {
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 10%;
+}
+
+.fas {
+  color: #FFD166;
+  margin-bottom: 5%;
+}
+
+.yorum {
+  padding: 5% 12%;
+}
+
+.yorum p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.yorum img {
+  width: 10%;
+}
+
+.fiyatlandirma .row .col-lg-4 {
+  margin-top: 10px;
+}
+
+@media(min-width:768px) {
+  .resim {
+    width: 50%;
+    transform: rotate(25deg);
+  }
+}
+
+@media(max-width:767px) {
+  .resim {
+    width: 50%;
+    transform: rotate(0deg);
+    margin-top: 30px;
+  }
+
+  .indirme-linkleri {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width:992px) {
+  .r-l-fluid-padding {
+    padding: 3% 15%;
+  }
+}
+
+@media (max-width:991px) {
+  .r-l-fluid-padding {
+    padding: 3% 3%;
+  }
+}

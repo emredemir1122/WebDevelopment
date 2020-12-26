@@ -1,0 +1,21 @@
+body{
+  background-color: #F1FAEE;
+}
+.navbar-brand{
+  color: red !important;
+  font-weight: bold;;
+  font-size: 1.9rem;
+}
+.populer-baslik{
+  background-color: red;
+  color: white;
+
+}
+.ekonomi{
+  border-left: 10px solid red;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+.card-img-top{
+  height: 200px;
+}

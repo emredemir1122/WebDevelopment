@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  border-left: 3px solid red;
+  padding-left: 10px;
+  background-color: #ffffff80;
+  font-family: 'Grandstander', cursive;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.logo {
+  border: 2px dashed red;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 2.2rem;
+  font-family: 'Marck Script', cursive;
+  display: inline-block;
+}
+
+.linkler {
+  display: inline-block;
+  float: right;
+  height: 75px;
+}
+
+.container {
+  background-color: purple;
+  padding: 10px 100px;
+}
+
+.container-fluid {
+  background-color: #6639a6;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.sag-sol-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.hakkimda {
+  background-color: #cffffe;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.prf {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px 0 40px 0;
+  border: 2px dashed;
+}
+
+.hkmyz {
+  padding-left: 30px;
+}
+
+.hobilerim {
+  background-color: #f8efd4;
+  border: 2px dashed red;
+  margin: 2% 0;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.hb {
+  padding-right: 30px;
+}
+
+.hobi-resim {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed;
+  border-radius: 40px 0 0 40px;
+}
+
+.diller {
+  background-color: #f4d9c6;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.dil-resim {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px 0 40px 0;
+}
+
+.bld {
+  padding-left: 30px;
+}

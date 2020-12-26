@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resim Galeri</title>
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="css\style.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="js\bootstrap.js" charset="utf-8"></script>
+
+</head>
+
+<body class="bg-light">
+  <button id="buton" onclick="renkDegistirme()">Dark Moda Geçiş</button>
+
+
+  <section id="header" class="sticky-top ">
+    <div id="dark" class="container-fluid ">
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">Galeri</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bize Ulaşın</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kategoriler
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Kategori-1</a>
+                <a class="dropdown-item" href="#">Kategori-2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Alt Kategori</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Arama">
+            <button  class="btn btn-success my-2 my-sm-0 arama" type="submit">Arama</button>
+          </form>
+        </div>
+      </nav>
+
+    </div>
+
+  </section>
+
+<section id="resimler">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/1.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/2.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/3.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/4.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/5.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/6.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/7.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/8.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/1.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/2.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+      <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/3.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/4.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/5.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/6.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/7.jpg" alt="">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm12">
+        <img src="http://webdevexamples.herokuapp.com/imagegallery/resimler/8.jpg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="footer" class="footer">
+<div class="container-fluid">
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Geri</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">İleri</a>
+    </li>
+  </ul>
+</nav>
+
+<hr>
+<div class="d-flex justify-content-between align-items-center text-muted">
+  <span> Bu sayfa bootstrap yardımıyla webdeveloper kursunda hazırlanmıştır.<br>
+  Daha fazla bilgi için <a href="#">TechproEducation</a>sayfasını ziyaret edebilirsiniz.</span>
+  <span><a class=" " href="#">Yukarı Çık</a></span>
+</div>
+
+
+
+
+</div>
+
+</section>
+
+<script type="text/javascript">
+
+
+function renkDegistirme(){
+  var bodyElementi=document.body;
+  var butonElementi=document.querySelector("#buton");
+  var aramaElementi=document.querySelector('.arama');
+  var footerElementi=document.getElementById("footer");
+    var darkElementi=document.getElementById("dark");
+
+  bodyElementi.classList.toggle("bg-dark");
+  darkElementi.classList.toggle("bg-dark");
+  footerElementi.classList.toggle("bg-dark");
+  butonElementi.classList.toggle("btn-dark");
+  bodyElementi.classList.toggle("text-white");
+for(var i=0; i<document.querySelectorAll("a").length; i++){
+  document.querySelectorAll("a")[i].classList.toggle("text-white");
+}
+for(var i=0; i<document.querySelectorAll(".page-link").length; i++){
+  document.querySelectorAll(".page-link")[i].classList.toggle("bg-dark");
+
+}
+
+
+
+
+  if(bodyElementi.classList.contains("bg-dark")){
+    butonElementi.innerText=("Light Moda Gecis Yap !");
+      aramaElementi.classList.replace("btn-success","btn-dark");
+  }else{
+    butonElementi.innerText=("Dark Moda Gecis Yap !");
+      aramaElementi.classList.replace("btn-dark","btn-success");
+  }
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+}
+
+.fiyat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  padding: 10px;
+}
+
+.dolar {
+  margin-bottom: 10px;
+  font-size: 2.0rem;
+}
+
+.bilgiler {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.button {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  padding: 10px 0;
+  background: #ffffff;
+  color: #444;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.ortak {
+  padding: 30px 10px;
+  margin: 15px;
+  float: left;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.yazi-ortala {
+  text-align: center;
+  padding: 3px;
+}
+
+.icon1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #5FB4FE 0%, #F439DA 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon2 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #FC20DA 0%, #FAEB7F 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #9455F6 0%, #3EFB85 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.kutu1 {
+  background: linear-gradient(135deg, #5FB4FE 0%, #F439DA 100%);
+  height: 480px;
+  width: 275px;
+  margin-top: 35px;
+}
+
+.kutu2 {
+  background: linear-gradient(135deg, #FC20DA 0%, #FAEB7F 100%);
+  height: 520px;
+  width: 275px;
+}
+
+/* kutu1
+     başlangıç : #5FB4FE
+     bitiş : #F439DA
+  */
+/* kutu2
+     başlangıç : #FC20DA
+     bitiş : #FAEB7F
+  */
+/* kutu3
+     başlangıç : #9455F6
+     bitiş : #3EFB85
+  */
+.kutu3 {
+  background: linear-gradient(135deg, #9455F6 0%, #3EFB85 100%);
+  height: 480px;
+  width: 275px;
+  margin-top: 35px;
+}

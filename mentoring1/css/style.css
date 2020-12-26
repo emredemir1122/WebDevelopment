@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #FAD961;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  width: 9%;
+}
+.paddingsifir{
+  padding-right: 0;
+}
+.yazi-3{
+  border:1.5px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+padding: 5px;
+
+
+}
+
+.yazi-1{
+  font-size:0.6rem;
+  font-weight: 800;
+  font-family: 'Poppins',sans-serif;
+}
+.yazi-2{
+  font-size: 3.2rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 800;
+}
+
+.cizgi{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width:200px;
+
+}
+.dikey{
+  width: 1px;
+  height:30px;
+
+border-left: 0.5px;
+background-color: gray ;
+}
+.orta{
+  font-size: 0.7rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+}
+.normal{
+  font-weight: normal;
+}
+.screen-t{
+  margin-top: 90px;
+}
+.genislik{
+  width: 30%;
+}
+.linkler{
+  width: 35%;
+  text-decoration: none;
+font-size: 0.8rem;
+}
+.ust-margin{
+  margin-top: 110px;
+}
+.alt-logo{
+  width:25%;
+}
+.link{
+  font-size: 0.6rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+}
+.alt{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height:350px;
+  width: 700px;
+}

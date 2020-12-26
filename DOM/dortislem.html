@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dört İşlem</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center">
+
+    <span class="hesaplama ">
+
+      <h1>Dört İşlem Oyunu</h1>
+
+      <span id="ilksayi">10</span>
+      <span id="islem">+</span>
+      <span id="ikincisayi">30</span>
+      <span> = </span>
+      <input type="text" id="sonuc" value="">
+      <button onclick="hesapla()">Cevapla</button>
+
+      <div class="text-center text-danger m-5" id="emoji"></div>
+    </span>
+
+
+  </div>
+
+
+  <script type="text/javascript">
+    var ilkSayiElementi = document.getElementById("ilksayi");
+    var ikinciSayiElementi = document.getElementById("ikincisayi");
+    var islemElementi = document.getElementById("islem");
+    var cevapInputElementi = document.getElementById("sonuc");
+    var emojiElementi = document.getElementById("emoji");
+
+    var rastgeleSayi1;
+    var rastgeleSayi2;
+
+
+
+    rastgeleSayiUretme();
+      function rastgeleSayiUretme(){
+
+        rastgeleSayi1 = Math.floor(Math.random() * 100);
+        rastgeleSayi2 = Math.floor(Math.random() * 100);
+        ilkSayiElementi.innerText = rastgeleSayi1;
+        ikinciSayiElementi.innerText = rastgeleSayi2;
+      }
+
+      function hesapla(){
+          var kullanicininYazdigiCevap= cevapInputElementi.value;
+        if(kullanicininYazdigiCevap==(rastgeleSayi1 + rastgeleSayi2)){
+         emojiElementi.innerHTML='  <i class="far fa-2x fa-smile"></i> ';
+        }else {
+        emojiElementi.innerHTML=' <i class="fas fa-2x fa-frown"></i> ';
+        }
+        rastgeleSayiUretme();
+      }
+
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

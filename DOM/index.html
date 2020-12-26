@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document Object Model</title>
+
+<link rel="stylesheet" href="css\bootstrap.css">
+
+  </head>
+  <body>
+    <button class="bg-ligt" onclick="renkDegistirme()">Dark Moda Gecis Yap</button>
+
+   <h1 id="baslik">Merhabalar</h1>
+
+   <div class="aciklama">
+     Burası Document Object Model calıstıgımız sayfa.
+   </div>
+<br>
+
+
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+
+  <script type="text/javascript">
+
+  var saat=(new Date).getHours();
+  if(saat>18 || saat<5){
+    renkDegistirme();
+  }
+
+  function renkDegistirme(){
+    var bodyElementi=  document.querySelector("body");
+    var buttonElementi= document.querySelector("button");
+
+
+    bodyElementi.classList.toggle("bg-dark");
+    bodyElementi.classList.toggle("text-white");
+    buttonElementi.classList.toggle("btn-dark");
+    if(bodyElementi.classList.contains("bg-dark")){
+      buttonElementi.innerText=("Light Moda Gecis Yap !");
+    }else{
+      buttonElementi.innerText=("Dark Moda Gecis Yap !");
+    }
+
+        }
+
+  </script>
+
+
+  </body>
+</html>

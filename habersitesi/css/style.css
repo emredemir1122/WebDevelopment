@@ -1,0 +1,26 @@
+body {
+  background-color: #F1FAEE;
+}
+
+.navbar-brand {
+  color: red !important;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.populer-baslik {
+  background-color: red;
+  color: white;
+}
+
+.ekonomi {
+  border-left: 10px solid red;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width:575px) {
+  .en-kucuk {
+    margin-top: 30px;
+  }
+}
