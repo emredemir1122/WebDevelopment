@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Listeleme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<link rel="stylesheet" href="css\bootstrap.css">
+
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var bodyElementi=document.body;
+bodyElementi.setAttribute("class","");
+document.body.setAttribute("style","background-color:#ffe2e2");
+
+var header=document.createElement("header");
+header.setAttribute("style","background-color:#252a34");
+header.setAttribute("class","text-white text-center");
+bodyElementi.appendChild(header);
+var h1Elementi=document.createElement("h1");
+h1Elementi.innerText="Alışveriş-Listesi";
+header.appendChild(h1Elementi);
+
+var inputElementi=document.createElement("input");
+inputElementi.setAttribute("type","text");
+inputElementi.setAttribute("oninput","degerAl()");
+header.appendChild(inputElementi);
+
+var buttonElementi=document.createElement("button");
+buttonElementi.setAttribute("onclick","tikla()");
+buttonElementi.setAttribute("type","submit");
+buttonElementi.setAttribute("class","btn-success");
+buttonElementi.innerText="EKLE";
+header.appendChild(buttonElementi);
+
+var divElementi=document.createElement("div");
+divElementi.setAttribute("class","row");
+bodyElementi.appendChild(divElementi);
+
+var divElementi1=document.createElement("div");
+divElementi1.setAttribute("class","col-lg-12 col-md-12 col-sm-12 mt-3 d-dlex flex-column text-center ");
+divElementi1.innerHTML="<h1>ALINACAKLAR</h1>";
+bodyElementi.appendChild(divElementi1);
+
+var olElementi=document.createElement("ol");
+bodyElementi.appendChild(olElementi);
+var deger;
+function degerAl() {
+  var deger=document.querySelector("input").value;
+  return deger;
+}
+
+var div,i,span,li;
+function tikla() {
+
+  var ekle=document.querySelector(".col-lg-12");
+   div=document.createElement("div");
+   div.setAttribute("style","background-color:#eaeaea; border:1px solid #ff2e63; border-radius:10px; font-size:1.3rem")
+   div.setAttribute("class","secret");
+   //div.setAttribute("onclick","tik()");
+ ekle.appendChild(div);
+ var li=document.createElement("li");
+ var yazi=document.createTextNode(degerAl());
+
+li.appendChild(yazi);
+//var span=document.createElement("span");
+// var i=document.createElement("i");
+// i.setAttribute("class","fas fa-check-circle text-success");
+// span.appendChild(i);
+//li.appendChild(span);
+div.appendChild(li);
+olElementi.appendChild(div);
+document.querySelector("input").value = "";
+var span=document.getElementsByClassName("secret");
+
+  for(i=0; i<span.length; i++){
+span[i].onclick=function(){
+div.classList.add("d-none");
+}
+}
+}
+
+
+
+</script>
+
+
+  </body>
+</html>
