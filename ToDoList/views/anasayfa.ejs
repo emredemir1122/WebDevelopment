@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="kutu shadow-sm baslik">
+      <h1>Yapılacaklar</h1>
+    </div>
+    <div class="kutu shadow-sm">
+      <% for(var i = 0; i < gorevler.length; i++){ %>
+        <form class="" action="/sil" method="post">
+          <div class="veri">
+            <input type="checkbox" name="id" value="<%= gorevler[i]._id %>" onChange="this.form.submit()">
+            <p> <%= gorevler[i].gorev  %> </p>
+          </div>
+        </form>
+      <% } %>
+      <form class="veri" action="/ekle" method="post">
+          <input type="text" name="gorevAciklama" placeholder="Görevi yazınız" autocomplete="off">
+          <button type="submit">+</button>
+      </form>
+    </div>
+  </body>
+</html>

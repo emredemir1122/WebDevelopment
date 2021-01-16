@@ -124,12 +124,19 @@ getCokOkunanlar(function(getCokOkunanlar){
 
 connection.query(artirmaSorgusu);
 
+connection.query("SELECT * FROM blogsitesi.yorumlar WHERE yorum_id = "+yaziId + " AND onay = 1",function(err,results,fields){
+
+  var gelenYorumlar=results;
+
+
 var sql="SELECT * FROM blogsitesi.makaleler WHERE id = " + yaziId;
 connection.query(sql,function(err,results,fields){
   res.render("yazi",{kategoriler:gelenKategoriler,cokOkunanlar:getCokOkunanlar,
-                            baslik:results[0].baslik,tarih:results[0].tarih,okunmasayisi:results[0].okunmasayisi,resim:results[0].resim,aciklama:results[0].aciklama});
+                            baslik:results[0].baslik,tarih:results[0].tarih,okunmasayisi:results[0].okunmasayisi,
+                            resim:results[0].resim,aciklama:results[0].aciklama,
+                          id:results[0].id,yorumlar:gelenYorumlar});
 });
-
+});
 });
 
 
@@ -187,6 +194,45 @@ if(req.session.kullanici){
 
 });
 
+
+app.post("/yorum-gonder",function(req,res){
+
+var isim =req.body.isim;
+var yorum=req.body.yorum;
+var yaziId =req.body.id;
+
+console.log(req.body);
+
+var sql ="INSERT INTO blogsitesi.yorumlar (isim,yorum,yorum_id,onay) VALUES('"+isim+"','"+yorum+"',"+yaziId+",0)";
+connection.query(sql,function(err,results,fields){
+
+  res.redirect("/yazi/"+yaziId);
+});
+
+});
+
+app.get("/admin-yorumlar",function(req,res){
+
+  var sql ="SELECT * FROM blogsitesi.yorumlar";
+  connection.query(sql,function(err,results,fields){
+
+    res.render("admin-yorumlar",{yorumlar:results});
+  });
+
+
+});
+app.get("/yorumonayla",function(req,res){
+  var yorumId=req.query.id;
+  var sql ="UPDATE blogsitesi.yorumlar SET onay = 1 WHERE id= " +yorumId;
+  connection.query(sql,function(err,results,fields){
+
+    res.redirect("/admin-yorumlar");
+  });
+
+
+})
+
+
 app.get("/admin-makaleekle",function(req,res){
 
 res.render("admin-makaleekle")
@@ -195,10 +241,30 @@ res.render("admin-makaleekle")
 
 app.get("/admin-makaleler",function(req,res){
 
-  res.render("admin-makaleler");
+  connection.query("SELECT * FROM makaleler",function(err,results,fields){
+
+  res.render("admin-makaleler",{makaleler:results});
+
+  })
+
+
 
 
 });
+
+app.get("/yazisil",function(req,res){
+
+var id=req.query.id;
+
+connection.query("DELETE FROM makaleler WHERE id= " +id,function(err,results,fieldz){
+
+res.redirect("/admin-makaleler");
+
+});
+
+})
+
+
 
 
 app.post("/giris-kontrol",function(req,res){

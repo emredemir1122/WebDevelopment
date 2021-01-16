@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Matematik Okulu</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Matematik Okulu</a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -34,7 +34,12 @@
                   Makale-Ekle
                 </a>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="/admin-yorumlar">
+                  <span data-feather="file"></span>
+                yorumlar
+                </a>
+              </li>
             </ul>
 
 
@@ -42,7 +47,27 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-          Makaleler
+      <div class="container" style="padding-left:20% ; padding-right:20%;" >
+
+  <%  for(var i=0;i<makaleler.length;i++){ %>
+  <form  action="/yazisil" method="get">
+        <div class="row shadow-sm p-2 mb-2">
+
+            <div class="col-7 d-flex align-items-center">
+              <h5><%= makaleler[i].baslik%></h5>
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-end">
+              <input class="d-none"  name="id" value="<%= makaleler[i].id%>">
+              <a href="/yazi/<%= makaleler[i].id%>"  class="btn btn-info mr-2">Yazıya Git</a>
+                <button type="submit" class="btn btn-danger">Yazıyı Sil</button>
+            </div>
+
+
+        </div>
+          </form>
+      <% }%>
+
+      </div>
         </main>
       </div>
     </div>
